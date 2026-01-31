@@ -1,0 +1,30 @@
+步驟1. Prompt
+
+角色： 你是一位資深的 Full-stack Web 開發專家，擅長使用 Next.js, Tailwind CSS,LocalStorage,React Library 和整合 AI API。
+
+專案目標： 我要開發一個『AI 智慧記帳 Web App」。
+
+核心功能流程：
+
+上傳/拍照： 使用者可以點擊按鈕開啟相機拍照或上傳發票/收據照片。
+
+影像辨識： 使用 Claude 3.5 Sonnet (Vision) 辨識照片中的食物名稱。
+
+數據檢索： 根據辨識出的金額、品項、日期與類別。
+
+顯示結果： 在網頁上漂亮地顯示自動儲存並生成本月消費佔比圖表。
+
+技術要求：
+
+使用 shadcn/ui 建立精美的儀表板介面。
+
+串接 Gemini 1.5 Flash (或 Claude 3.5) 的 Vision 功能，將發票照片轉化為 JSON 格式（包含：store, amount, date, category）。
+
+使用 Recharts 顯示一個圓餅圖，呈現不同類別（飲食、交通、娛樂等）的支出比例。
+
+增加一個『手動修正』按鈕，如果 AI 辨識金額錯誤，使用者可以修改。
+
+技術棧： Next.js, Tailwind CSS, Lucide-react, Recharts。
+
+
+程式碼風格：簡潔、模組化，並在關鍵邏輯處加上繁體中文註解。
