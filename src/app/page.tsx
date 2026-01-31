@@ -98,6 +98,7 @@ function formatMoney(n: number) {
 
 export default function Home() {
   const fileInputRef = useRef<HTMLInputElement | null>(null);
+  const cameraInputRef = useRef<HTMLInputElement | null>(null);
   const [expenses, setExpenses] = useState<ExpenseItem[]>(() => []);
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
@@ -275,6 +276,14 @@ export default function Home() {
                 ref={fileInputRef}
                 type="file"
                 accept="image/*"
+                className="hidden"
+                onChange={(e) => handleFileSelected(e.target.files?.[0] ?? null)}
+              />
+
+              <input
+                ref={cameraInputRef}
+                type="file"
+                accept="image/*"
                 capture="environment"
                 className="hidden"
                 onChange={(e) => handleFileSelected(e.target.files?.[0] ?? null)}
@@ -296,7 +305,7 @@ export default function Home() {
 
                 <Button
                   variant="outline"
-                  onClick={() => fileInputRef.current?.click()}
+                  onClick={() => cameraInputRef.current?.click()}
                   disabled={isLoading}
                   className="h-12 border-2 border-purple-300 text-purple-700 font-semibold hover:bg-purple-50 transition"
                 >

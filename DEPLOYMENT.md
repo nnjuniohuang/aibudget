@@ -178,6 +178,78 @@ Vercel 會自動檢測 GitHub 的更新，自動部署新版本！🚀
 
 ---
 
+## 📋 詳細範例：修正「開啟相機」按鈕功能
+
+假設你在 VS Code 中修改了程式碼（例如修正相機按鈕問題），以下是完整步驟：
+
+### 1️⃣ 檢查修改內容
+
+```bash
+git status
+```
+
+你會看到修改過的檔案（例如 `src/app/page.tsx`）
+
+### 2️⃣ 預覽修改內容（可選）
+
+```bash
+git diff src/app/page.tsx
+```
+
+確認修改內容無誤
+
+### 3️⃣ 添加所有修改到暫存區
+
+```bash
+git add .
+```
+
+或只添加特定檔案：
+
+```bash
+git add src/app/page.tsx
+```
+
+### 4️⃣ 提交修改到本地 Git
+
+```bash
+git commit -m "修正：修改『開啟相機』按鈕，創建獨立的相機輸入框
+
+- 添加 cameraInputRef 用於相機拍照（capture='environment'）
+- 保留 fileInputRef 用於相冊選擇
+- 按鈕功能現在完全符合標籤說明"
+```
+
+### 5️⃣ 推送到 GitHub
+
+```bash
+git push origin main
+```
+
+如果是第一次推送此分支，可能需要：
+
+```bash
+git push -u origin main
+```
+
+### 6️⃣ Vercel 自動部署
+
+- GitHub 推送完成後，Vercel 會自動檢測更新
+- 等待 1-2 分鐘，新版本就會自動部署上線
+- 在 Vercel Dashboard → **Deployments** 標籤可看到部署進度
+
+### 7️⃣ 驗證部署成功
+
+打開你的應用 URL：
+
+```
+https://aibudget-yourname.vercel.app
+```
+
+刷新頁面，應該就能看到修改後的功能了！✅
+
+---
+
 ## 🐛 故障排除
 
 ### 1. `git push` 失敗
