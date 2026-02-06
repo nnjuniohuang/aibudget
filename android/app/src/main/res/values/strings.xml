@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">AI 智慧記帳</string>
+    <string name="app_name_short">記帳</string>
+    
+    <!-- Navigation -->
+    <string name="home_screen">首頁</string>
+    <string name="camera_screen">拍照</string>
+    <string name="settings_screen">設置</string>
+    
+    <!-- Buttons -->
+    <string name="btn_take_photo">拍照</string>
+    <string name="btn_upload_image">上傳圖片</string>
+    <string name="btn_manual_add">手動新增</string>
+    <string name="btn_confirm">確認</string>
+    <string name="btn_cancel">取消</string>
+    <string name="btn_save">保存</string>
+    <string name="btn_delete">刪除</string>
+    <string name="btn_edit">編輯</string>
+    <string name="btn_retry">重試</string>
+    <string name="btn_back">返回</string>
+    
+    <!-- Labels -->
+    <string name="label_store">商店</string>
+    <string name="label_amount">金額</string>
+    <string name="label_date">日期</string>
+    <string name="label_category">分類</string>
+    <string name="label_note">備註</string>
+    <string name="label_total_this_month">本月總支出</string>
+    <string name="label_expense_list">支出列表</string>
+    
+    <!-- Categories -->
+    <string name="category_food">飲食</string>
+    <string name="category_transport">交通</string>
+    <string name="category_entertainment">娛樂</string>
+    <string name="category_shopping">購物</string>
+    <string name="category_essentials">日用品</string>
+    <string name="category_healthcare">醫療</string>
+    <string name="category_others">其他</string>
+    
+    <!-- Messages -->
+    <string name="msg_loading">加載中...</string>
+    <string name="msg_recognizing">識別中...</string>
+    <string name="msg_success">成功</string>
+    <string name="msg_error">出錯了</string>
+    <string name="msg_empty_list">沒有記錄</string>
+    <string name="msg_confirm_delete">確定要刪除嗎？</string>
+    
+    <!-- Permissions -->
+    <string name="permission_camera_required">需要相機權限才能拍照</string>
+    <string name="permission_storage_required">需要存儲權限才能訪問圖片</string>
+    
+    <!-- Settings -->
+    <string name="settings_export_data">導出數據</string>
+    <string name="settings_import_data">導入數據</string>
+    <string name="settings_clear_data">清除所有數據</string>
+    <string name="settings_about">關於應用</string>
+    <string name="settings_version">版本 1.0.0</string>
+</resources>

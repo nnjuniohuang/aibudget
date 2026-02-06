@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Primary Colors -->
+    <color name="primary">#1F97E6</color>
+    <color name="primary_dark">#0D5BA8</color>
+    <color name="accent">#FF6B6B</color>
+    
+    <!-- Neutral Colors -->
+    <color name="background">#FFFFFF</color>
+    <color name="surface">#F5F5F5</color>
+    <color name="error">#B3261E</color>
+    
+    <!-- Text Colors -->
+    <color name="text_primary">#1C1B1F</color>
+    <color name="text_secondary">#49454E</color>
+    <color name="text_tertiary">#79747E</color>
+    
+    <!-- Category Colors -->
+    <color name="category_food">#F97316</color>
+    <color name="category_transport">#3B82F6</color>
+    <color name="category_entertainment">#EC4899</color>
+    <color name="category_shopping">#A855F7</color>
+    <color name="category_essentials">#10B981</color>
+    <color name="category_healthcare">#EF4444</color>
+    <color name="category_others">#6B7280</color>
+    
+    <!-- Status Colors -->
+    <color name="success">#10B981</color>
+    <color name="warning">#F59E0B</color>
+    <color name="info">#0EA5E9</color>
+</resources>

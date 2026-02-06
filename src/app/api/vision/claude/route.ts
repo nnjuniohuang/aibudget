@@ -67,7 +67,7 @@ export async function POST(req: Request) {
 
   try {
     const message = await client.messages.create({
-      model: "claude-3-5-sonnet-20241022",
+      model: "claude-3-5-haiku-20241022",
       max_tokens: 512,
       messages: [
         {
@@ -120,8 +120,10 @@ export async function POST(req: Request) {
 
     return NextResponse.json(validated.data);
   } catch (err) {
+    const errorMessage = err instanceof Error ? err.message : String(err);
+    console.error("Vision API error:", errorMessage);
     return NextResponse.json(
-      { error: "Vision API failed" },
+      { error: "Vision API failed", detail: errorMessage },
       { status: 502 },
     );
   }

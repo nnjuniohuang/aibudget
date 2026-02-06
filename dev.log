@@ -1,0 +1,16 @@
+
+> aibudget@0.1.0 dev
+> next dev
+
+▲ Next.js 16.1.5 (Turbopack)
+- Local:         http://localhost:3000
+- Network:       http://172.28.208.1:3000
+- Environments: .env.local
+
+✓ Starting...
+✓ Ready in 2.9s
+○ Compiling / ...
+ GET / 200 in 13.4s (compile: 12.0s, render: 1463ms)
+ GET / 200 in 166ms (compile: 17ms, render: 149ms)
+ POST /api/vision/claude 200 in 7.7s (compile: 1081ms, render: 6.6s)
+ POST /api/vision/claude 200 in 6.1s (compile: 13ms, render: 6.1s)

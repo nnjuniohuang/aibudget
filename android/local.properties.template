@@ -1,0 +1,34 @@
+# Android SDK 路徑 - 請根據實際安裝路徑修改
+# 例如 Windows: C:\\Users\\YourUsername\\AppData\\Local\\Android\\Sdk
+# 例如 macOS: /Users/YourUsername/Library/Android/sdk
+# 例如 Linux: /home/username/Android/Sdk
+sdk.dir=YOUR_ANDROID_SDK_PATH
+
+# Android NDK 路徑（可選）
+# ndk.dir=YOUR_ANDROID_NDK_PATH
+
+# ===== Anthropic Claude API Key =====
+# 重要：不要在公開的 GitHub 倉庫中提交這個文件
+# 這個文件應該在 .gitignore 中被忽略
+# 
+# 如何獲取 API Key：
+# 1. 訪問 https://console.anthropic.com/
+# 2. 登錄或創建帳號
+# 3. 在 API Keys 頁面創建新的 API Key
+# 4. 將 Key 複製到下方
+#
+# 格式: sk-ant-xxxxxxxxxxxxxxxxxxxxx
+ANTHROPIC_API_KEY=sk-ant-YOUR_API_KEY_HERE
+
+# ===== 構建優化設置 =====
+# 啟用並行編譯
+org.gradle.parallel=true
+
+# 啟用構建緩存
+org.gradle.caching=true
+
+# 提高 JVM 堆內存（用於大項目）
+org.gradle.jvmargs=-Xmx2048m -XX:MaxPermSize=512m
+
+# Kotlin 編譯器設置
+kotlin.code.style=official

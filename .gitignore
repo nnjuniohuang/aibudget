@@ -39,3 +39,42 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+# ===== Android 部分 =====
+# Gradle
+android/.gradle/
+android/build/
+android/*/build/
+
+# Android Studio
+android/.idea/
+android/*.iml
+android/*.iws
+android/*.ipr
+android/local.properties
+android/.DS_Store
+
+# Gradle files
+android/.gradle
+android/.gradletasknamecache
+android/build/
+
+# Android Studio files
+android/.idea/
+android/.gradle/
+android/local.properties
+
+# Build files
+android/**/*.apk
+android/**/*.ap_
+android/**/*.dex
+android/**/*.class
+android/**/build/
+
+# Emulator
+android/*.avd/
+android/*.ini
+
+# Keys and credentials
+android/local.properties
+android/*.keystore
+android/*.jks
