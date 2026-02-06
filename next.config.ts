@@ -2,13 +2,7 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   reactCompiler: true,
-  // 增加请求体大小限制到 5MB
-  serverRuntimeConfig: {
-    maxRequestBodySize: "5mb",
-  },
-  api: {
-    responseLimit: "5mb",
-  },
+  // Next.js 会自动处理大文件上传，默认支持 5MB
 };
 
 export default nextConfig;

@@ -2,15 +2,6 @@ import { NextResponse } from "next/server";
 import Anthropic from "@anthropic-ai/sdk";
 import { z } from "zod";
 
-// 增加请求体大小限制到 5MB
-export const config = {
-  api: {
-    bodyParser: {
-      sizeLimit: "5mb",
-    },
-  },
-};
-
 const RequestSchema = z.object({
   imageBase64: z.string().min(1),
   mediaType: z
